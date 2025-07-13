@@ -1,43 +1,73 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #f8f8f8;
-  padding: 20px;
+  padding: 30px;
 }
 
 h1 {
   text-align: center;
-  color: #444;
+  color: #2c3e50;
+  margin-bottom: 40px;
 }
 
 h3 {
-  margin-top: 30px;
-  color: #2c3e50;
+  margin-top: 40px;
+  color: #34495e;
 }
 
 .course {
   display: inline-block;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 6px;
+  padding: 14px 18px;
+  margin: 8px;
+  border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  min-width: 220px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  white-space: nowrap;
 }
 
+/* Estados */
 .locked {
-  background-color: #cccccc;
-  color: #666666;
+  background-color: #ddd;
+  color: #666;
+  border: 2px dashed #aaa;
   pointer-events: none;
 }
 
 .available {
-  background-color: #f1f1f1;
-  color: #333333;
-  border: 2px solid #3498db;
+  background-color: #fff;
+  color: #2c3e50;
+  border: 2px solid #2980b9;
 }
 
 .approved {
   background-color: #2ecc71;
-  color: #ffffff;
+  color: white;
   border: 2px solid #27ae60;
+  box-shadow: 0 0 10px rgba(46,204,113,0.6);
 }
+.approved::after {
+  content: " ✅";
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Colores por área */
+.area-anatomia        { background-color: #3498db; color: white; }
+.area-parasitologia   { background-color: #27ae60; color: white; }
+.area-clinica         { background-color: #e74c3c; color: white; }
+.area-produccion      { background-color: #e67e22; color: white; }
+.area-salud           { background-color: #9b59b6; color: white; }
+.area-reproduccion    { background-color: #ff9ff3; color: #2c3e50; }
+.area-final           { background-color: #7f8c8d; color: white; }

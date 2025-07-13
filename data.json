@@ -1,0 +1,94 @@
+{
+  "semesters": [
+    {
+      "name": "Semestre 1",
+      "courses": [
+        { "code": "333001", "name": "🫀 Anatomía Animal I", "credits": 6, "prerequisites": [] },
+        { "code": "333002", "name": "🧬 Biología Celular", "credits": 5, "prerequisites": [] },
+        { "code": "333003", "name": "⚗️ Química General", "credits": 4, "prerequisites": [] },
+        { "code": "333004", "name": "📐 Matemáticas", "credits": 4, "prerequisites": [] },
+        { "code": "333005", "name": "🎓 Introducción a la MV", "credits": 4, "prerequisites": [] }
+      ]
+    },
+    {
+      "name": "Semestre 2",
+      "courses": [
+        { "code": "333006", "name": "🫀 Anatomía Animal II", "credits": 6, "prerequisites": ["333001"] },
+        { "code": "333007", "name": "🧪 Bioquímica", "credits": 6, "prerequisites": ["333003"] },
+        { "code": "333008", "name": "🧬 Histología", "credits": 5, "prerequisites": ["333002"] },
+        { "code": "333009", "name": "🧫 Embriología Veterinaria", "credits": 5, "prerequisites": ["333002"] }
+      ]
+    },
+    {
+      "name": "Semestre 3",
+      "courses": [
+        { "code": "333010", "name": "🫀 Fisiología Animal I", "credits": 6, "prerequisites": ["333006", "333007"] },
+        { "code": "333011", "name": "🔬 Microbiología I", "credits": 6, "prerequisites": ["333007"] },
+        { "code": "333012", "name": "🌿 Zoología y Ecología", "credits": 5, "prerequisites": [] },
+        { "code": "333013", "name": "📊 Bioestadística", "credits": 4, "prerequisites": ["333004"] }
+      ]
+    },
+    {
+      "name": "Semestre 4",
+      "courses": [
+        { "code": "333014", "name": "🫀 Fisiología Animal II", "credits": 6, "prerequisites": ["333010"] },
+        { "code": "333015", "name": "🧫 Inmunología", "credits": 5, "prerequisites": ["333011"] },
+        { "code": "333016", "name": "🔬 Parasitología I", "credits": 5, "prerequisites": ["333011"] },
+        { "code": "333017", "name": "🐾 Etología y Bienestar Animal", "credits": 4, "prerequisites": ["333012"] }
+      ]
+    },
+    {
+      "name": "Semestre 5",
+      "courses": [
+        { "code": "333018", "name": "🧪 Farmacología", "credits": 4, "prerequisites": ["333014"] },
+        { "code": "333019", "name": "🐣 Reproducción Animal I", "credits": 4, "prerequisites": ["333014"] },
+        { "code": "333020", "name": "🔬 Parasitología II", "credits": 5, "prerequisites": ["333016"] },
+        { "code": "333021", "name": "🐄 Nutrición Animal", "credits": 4, "prerequisites": ["333014"] }
+      ]
+    },
+    {
+      "name": "Semestre 6",
+      "courses": [
+        { "code": "333022", "name": "🦠 Patología General", "credits": 6, "prerequisites": ["333015"] },
+        { "code": "333023", "name": "🐣 Reproducción Animal II", "credits": 4, "prerequisites": ["333019"] },
+        { "code": "333024", "name": "🐄 Producción Animal I", "credits": 5, "prerequisites": ["333021"] },
+        { "code": "333025", "name": "🧮 Epidemiología Veterinaria", "credits": 4, "prerequisites": ["333013"] }
+      ]
+    },
+    {
+      "name": "Semestre 7",
+      "courses": [
+        { "code": "333026", "name": "🧪 Patología Clínica", "credits": 5, "prerequisites": ["333022"] },
+        { "code": "333027", "name": "🐄 Producción Animal II", "credits": 5, "prerequisites": ["333024"] },
+        { "code": "333028", "name": "🔧 Cirugía General", "credits": 5, "prerequisites": ["333018", "333022"] },
+        { "code": "333029", "name": "📸 Imagenología Veterinaria", "credits": 4, "prerequisites": ["333022"] }
+      ]
+    },
+    {
+      "name": "Semestre 8",
+      "courses": [
+        { "code": "333030", "name": "💉 Medicina Interna I", "credits": 6, "prerequisites": ["333026"] },
+        { "code": "333031", "name": "🐄 Clínica de Animales Mayores", "credits": 6, "prerequisites": ["333027"] },
+        { "code": "333032", "name": "💊 Anestesiología", "credits": 4, "prerequisites": ["333028"] },
+        { "code": "333033", "name": "🥩 Inocuidad de Alimentos", "credits": 4, "prerequisites": ["333025"] }
+      ]
+    },
+    {
+      "name": "Semestre 9",
+      "courses": [
+        { "code": "333034", "name": "💉 Medicina Interna II", "credits": 6, "prerequisites": ["333030"] },
+        { "code": "333035", "name": "🐶 Clínica de Animales Pequeños", "credits": 6, "prerequisites": ["333030"] },
+        { "code": "333036", "name": "🛡️ Salud Pública Veterinaria", "credits": 4, "prerequisites": ["333033"] },
+        { "code": "333037", "name": "📘 Electivo Profesional", "credits": 3, "prerequisites": [] }
+      ]
+    },
+    {
+      "name": "Semestre 10",
+      "courses": [
+        { "code": "333038", "name": "🔬 Internado Clínico", "credits": 8, "prerequisites": ["333034", "333035"] },
+        { "code": "333039", "name": "🧳 Práctica Profesional", "credits": 8, "prerequisites": ["333038"] },
+        { "code": "333040", "name": "🧠 Trabajo de Titulación", "credits": 5, "prerequisites": ["333038"] }
+      ]
+    }
+  ]
+}

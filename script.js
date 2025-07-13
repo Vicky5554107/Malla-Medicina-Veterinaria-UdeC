@@ -29,8 +29,9 @@ function renderCourses(data) {
 
       // Área académica por ícono
       const areaClass = getAreaClass(course.name);
-      btn.classList.add(areaClass);
-
+      if (areaClass) {
+        btn.classList.add(areaClass);
+      }
       // Estado visual
       if (isApproved) {
         btn.classList.add("approved");

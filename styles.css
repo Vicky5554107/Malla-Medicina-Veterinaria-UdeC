@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+}
+
+h3 {
+  margin-top: 30px;
+  color: #2c3e50;
+}
+
+.course {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.locked {
+  background-color: #cccccc;
+  color: #666666;
+  pointer-events: none;
+}
+
+.available {
+  background-color: #f1f1f1;
+  color: #333333;
+  border: 2px solid #3498db;
+}
+
+.approved {
+  background-color: #2ecc71;
+  color: #ffffff;
+  border: 2px solid #27ae60;
+}

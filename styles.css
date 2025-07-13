@@ -71,3 +71,7 @@ h3 {
 .area-salud           { background-color: #9b59b6; color: white; }
 .area-reproduccion    { background-color: #ff9ff3; color: #2c3e50; }
 .area-final           { background-color: #7f8c8d; color: white; }
+.area-default {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
